@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css"/>
+    <title>Teste</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="mensagem">DESCONTO USANDO O CÓDIGO </p>
+      <input type="text" id="codigo" placeholder="esdruxula" />
+      <button id="botao" onclick="mensagem()">verificar</button>
+    </div>
+
+    <script>
+      function mensagem() {
+        const men = document.getElementById("mensagem");
+        const nomedigitado = "esdruxula";
+        const name = document.getElementById("codigo").value;
+        const bot = document.getElementById("botao");
+        if (name == nomedigitado) {
+          men.innerHTML = "OBA, DESCONTO";
+        } else {
+          men.innerHTML = "CÓDIGO INVÁLIDO";
+        }
+      }
+    </script>
+  </body>
+</html>
